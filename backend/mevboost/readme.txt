@@ -1,0 +1,1 @@
+Verified mevboost data (MEV reward) is stored here in json format

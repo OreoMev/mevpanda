@@ -1,0 +1,1 @@
+Relay data, gathered via relays api is stored here in json format

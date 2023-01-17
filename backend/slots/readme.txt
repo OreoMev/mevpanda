@@ -1,0 +1,1 @@
+Slot data is stored here in json format
