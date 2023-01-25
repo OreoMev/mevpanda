@@ -216,6 +216,12 @@ def verify(filename):
     #Option 1: proposer_fee_receipient was set as a miner
     if (miner==proposer_fee_recipient):
         deliveredETH=deliveredETH+blockReward
+        url="https://api.etherscan.io/api?module=account&action=txlistinternal&address="+proposer_fee_recipient+"&startblock="+str(blockNumber)+"&endblock="+str(blockNumber)+"&apikey="+etherscanAPIkey
+        internalData = requests.get(url)
+        internalDataJson = json.loads(internalData.text)
+        for t in internalDataJson["result"]:
+            if (t["to"].lower()==proposer_fee_recipient):
+                deliveredETH=deliveredETH+ int(t["value"])
 
     #Option 2: If any transaction was sent from the miner (block builder) to proposer_fee_recipient address (for loop throug all transactions)
     fromList=[]
