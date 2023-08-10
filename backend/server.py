@@ -35,7 +35,8 @@ relays=[
 {"id":"bloxrouteEthical","url":"https://bloxroute.ethical.blxrbdn.com/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"},
 {"id":"bloxrouteRegulated","url":"https://bloxroute.regulated.blxrbdn.com/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"},
 {"id":"agnostic","url":"https://agnostic-relay.net/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"},
-{"id":"ultrasound","url":"https://relay.ultrasound.money/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"}
+{"id":"ultrasound","url":"https://relay.ultrasound.money/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"},
+{"id":"wenmerge","url":"https://relay.wenmerge.com/relay/v1/data/bidtraces/proposer_payload_delivered?limit=100"}
 ]
 #Locking functions (prevent double loading of data)
 def lock(name):
